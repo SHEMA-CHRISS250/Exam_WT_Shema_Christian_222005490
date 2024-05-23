@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Update feedback Details</h2>
+    <form id="updateForm" action="updatefeedback.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>FeedID:</td>
+                <td><input type="number" name="FeedID" id="FeedID" oninput="validate()"></td>
+                <td><div id="errorFeedID"></div></td>
+            </tr>
+            <tr>
+                <td>UserID:</td>
+                <td><input type="number" name="UserID" id="UserID" oninput="validate()"></td>
+                <td><div id="errorUserID"></div></td>
+            </tr>
+            <tr>
+                <td>CourseID:</td>
+                <td><input type="number" name="CourseID" id="CourseID" oninput="validate()"></td>
+                <td><div id="errorCourseID"></div></td>
+            </tr>
+            <tr>
+                <td>FeedbackContent:</td>
+                <td><input type="text" name="FeedbackContent" id="FeedbackContent" oninput="validate()"></td>
+                <td><div id="errorFeedbackContent"></div></td>
+            </tr>
+             <tr>
+                <td>Rating:</td>
+                <td><input type="text" name="Rating" id="Rating" oninput="validate()"></td>
+                <td><div id="errorRating"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="update" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

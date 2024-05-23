@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+</head>
+<body>
+    <h2>Certificate Registration Form</h2>
+    <form id="certificateForm" action="certificateform.php" method="POST">
+        
+        <label for="UserID">UserID:</label><br>
+        <input type="number" id="UserID" name="UserID" required><br>
+        
+        <label for="CourseID">CourseID:</label><br>
+        <input type="number" id="CourseID" name="CourseID" required><br>
+
+        <label for="DateOfCertificate">Date of Certificate:</label><br>
+        <input type="date" id="DateOfCertificate" name="DateOfCertificate" required><br>
+        
+        <label for="CertificateName">Certificate Name:</label><br>
+        <input type="text" id="CertificateName" name="CertificateName" required><br>
+
+        <label for="IssuerName">Issuer Name:</label><br>
+        <input type="text" id="IssuerName" name="IssuerName" required><br>
+        
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('certificateForm').addEventListener('submit', function(event) {
+            // Validate the form fields before submission
+            var userID = document.getElementById('UserID').value;
+            var courseID = document.getElementById('CourseID').value;
+            var dateOfCertificate = document.getElementById('DateOfCertificate').value;
+            var certificateName = document.getElementById('CertificateName').value;
+            var issuerName = document.getElementById('IssuerName').value;
+
+            // Perform validation here (e.g., check if fields are not empty)
+
+            // Example: Check if fields are not empty
+            if (!userID || !courseID || !dateOfCertificate || !certificateName || !issuerName) {
+                alert('Please fill in all required fields.');
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+</body>
+</html>

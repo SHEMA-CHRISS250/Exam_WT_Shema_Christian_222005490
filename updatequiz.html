@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Update quiz Details</h2>
+    <form id="updateForm" action="updatequiz.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>QuizID:</td>
+                <td><input type="number" name="QuizID" id="QuizID" oninput="validate()"></td>
+                <td><div id="errorQuizID"></div></td>
+            </tr>
+            <tr>
+                <td>UserID:</td>
+                <td><input type="number" name="UserID" id="UserID" oninput="validate()"></td>
+                <td><div id="errorUserID"></div></td>
+            </tr>
+            <tr>
+                <td> QuizTitle:</td>
+                <td><input type="number" nameQuizTitle" id="QuizTitle" oninput="validate()"></td>
+                <td><div id="erroQuizTitle"></div></td>
+            </tr>
+            <tr>
+                <td>Question:</td>
+                <td><input type="text" name="Question" id="Question" oninput="validate()"></td>
+                <td><div id="errorQuestion"></div></td>
+            </tr>
+             <tr>
+                <td>CorrectAnswers:</td>
+                <td><input type="text" name="CorrectAnswers" id="CorrectAnswers" oninput="validate()"></td>
+                <td><div id="errorCorrectAnswers"></div></td>
+            </tr>
+            <tr>
+                <td>MaximumScore:</td>
+                <td><input type="text" name="MaximumScore" id="MaximumScore" oninput="validate()"></td>
+                <td><div id="errorMaximumScore"></div></td>
+            </tr>
+            <tr>
+                <td>PassingScore:</td>
+                <td><input type="text" name="PassingScore" id="PassingScore" oninput="validate()"></td>
+                <td><div id="errorPassingScore"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="update" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

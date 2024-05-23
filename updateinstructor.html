@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Update instructor Details</h2>
+    <form id="updateForm" action="updateinstructor.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>InstructorID:</td>
+                <td><input type="number" name="InstructorID" id="InstructorID" oninput="validate()"></td>
+                <td><div id="errorInstructorID"></div></td>
+            </tr>
+            <tr>
+                <td>FirstName:</td>
+                <td><input type="text" name="FirstName" id="FirstName" oninput="validate()"></td>
+                <td><div id="errorFirstName"></div></td>
+            </tr>
+            <tr>
+                <td>LastName:</td>
+                <td><input type="text" name="LastName" id="LastName" oninput="validate()"></td>
+                <td><div id="errorLastName"></div></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="Email" id="Email" oninput="validate()"></td>
+                <td><div id="errorEmail"></div></td>
+            </tr>
+             <tr>
+                <td>PhoneNumber:</td>
+                <td><input type="text" name="PhoneNumber" id="PhoneNumber" oninput="validate()"></td>
+                <td><div id="errorPhoneNumber"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="update" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

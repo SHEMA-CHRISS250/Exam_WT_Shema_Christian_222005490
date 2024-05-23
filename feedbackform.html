@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <button class="back-button" onclick="window.location.href='Dashboard.html'">Back</button>
+</head>
+<body>
+    <h2>feedback Registration Form</h2>
+    <form action="feedbackform.php" method="POST">
+        
+        <label for="UserID">UserID:</label><br>
+        <input type="number" id="UserID" name="UserID"><br>
+        
+        <label for="CourseID">CourseID:</label><br>
+        <input type="number" id="CourseID" name="CourseID"><br>
+
+         <label for="FeedbackContent">FeedbackContent:</label><br>
+        <input type="text" id="FeedbackContent" name="FeedbackContent"><br>
+        
+        <label for="Rating">Rating:</label><br>
+        <input type="text" id="Rating" name="Rating"><br>
+         <br>
+     <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

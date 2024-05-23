@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Update courses Details</h2>
+    <form id="updateForm" action="updatecourses.php" method="POST">
+        <table id="table1">
+            <tr>
+    
+                <td>CourseID:</td>
+                <td><input type="number" name="CourseID" id="CourseID" oninput="validate()"></td>
+                <td><div id="errorCourseID"></div></td>
+            </tr>
+            <tr>
+                <td>CourseName:</td>
+                <td><input type="text" name="CourseName" id="CourseName" oninput="validate()"></td>
+                <td><div id="errorCourseName"></div></td>
+            </tr>
+             <tr>
+                <td>Description:</td>
+                <td><input type="text" name="Description" id="Description" oninput="validate()"></td>
+                <td><div id="errorDescription"></div></td>
+            </tr>
+            <tr>
+                <td>InstructorID:</td>
+                <td><input type="text" name="InstructorID" id="InstructorID" oninput="validate()"></td>
+                <td><div id="errorInstructorID"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="update" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

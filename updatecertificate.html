@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Update Certificate Details</h2>
+    <form id="updateForm" action="updateCertificate.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>CertificateID:</td>
+                <td><input type="number" name="CertificateID" id="CertificateID" oninput="validate()"></td>
+                <td><div id="errorCertificateID"></div></td>
+            </tr>
+            <tr>
+                <td>UserID:</td>
+                <td><input type="number" name="UserID" id="UserID" oninput="validate()"></td>
+                <td><div id="errorUserID"></div></td>
+            </tr>
+            <tr>
+                <td>CourseID:</td>
+                <td><input type="number" name="CourseID" id="CourseID" oninput="validate()"></td>
+                <td><div id="errorCourseID"></div></td>
+            </tr>
+            <tr>
+                <td>DateOfCertificate:</td>
+                <td><input type="date" name="DateOfCertificate" id="DateOfCertificate" oninput="validate()"></td>
+                <td><div id="errorDateOfCertificate"></div></td>
+            </tr>
+             <tr>
+                <td>CertificateName:</td>
+                <td><input type="text" name="CertificateName" id="CertificateName" oninput="validate()"></td>
+                <td><div id="errorCertificateName"></div></td>
+            </tr>
+            <tr>
+                <td>IssuerName:</td>
+                <td><input type="text" name="IssuerName" id="IssuerName" oninput="validate()"></td>
+                <td><div id="errorIssuerName"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="update" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
